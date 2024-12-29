@@ -41,6 +41,20 @@ body {
     padding: 20px;
 }
 
-.card-1{
-    margin-left: 80.5%;
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Разделяет карточки равномерно */
+    flex-wrap: wrap; /* Переносит карточки на следующую строку при необходимости */
+    gap: 20px; /* Расстояние между карточками */
+    padding: 20px;
+}
+
+.card-1 {
+    flex: 1 1 calc(25% - 20px); /* 4 карточки в строке с учетом отступов */
+    max-width: 18rem;
+}
+
+.department{
+    border-top: 2px solid black; /* Устанавливаем черную линию */
+
 }
