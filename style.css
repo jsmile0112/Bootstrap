@@ -58,3 +58,62 @@ body {
     border-top: 2px solid black; /* Устанавливаем черную линию */
 
 }
+
+body {
+    background: linear-gradient(to bottom, #87CEFA, #FFFFFF); /* Яркий голубой переходит в белый */
+}
+
+.text-123{
+    background-color: rgba(0, 0, 0, 0.378);
+}
+
+.end-section {
+    background-color: #d3d3d300; /* Серый фон */
+    height: 300px; /* Высота конца сайта */
+    display: flex;
+    justify-content: center; /* Выравнивание текста по горизонтали */
+    align-items: center; /* Выравнивание текста по вертикали */
+}
+
+    .end-section h1 {
+    font-size: 3rem;
+    color: #333; /* Темно-серый текст */
+    text-transform: uppercase; /* Заглавные буквы */
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 1200px) {
+    .card-1 {
+        flex: 1 1 calc(33.33% - 20px); /* 3 карточки в строке */
+    }
+}
+
+@media (max-width: 992px) {
+    .card-1 {
+        flex: 1 1 calc(50% - 20px); /* 2 карточки в строке */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-1 {
+        flex: 1 1 100%; /* 1 карточка в строке */
+    }
+
+    .text {
+        font-size: 1.2rem; /* Уменьшаем размер текста */
+    }
+
+    .text-2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .overlay {
+        padding: 20px;
+    }
+
+    .end-section h1 {
+        font-size: 2rem; /* Уменьшаем заголовок */
+    }
+}
