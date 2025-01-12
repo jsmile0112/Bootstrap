@@ -9,12 +9,12 @@ body {
     /* Убираем overflow: hidden, чтобы страница могла скролиться */
 }
 
-.background {
-    position: relative;
-    height: 100vh; /* Первый блок на весь экран */
-    width: 100%;
-    background: url('./елка.jpg') no-repeat center center/cover;  
-}
+
+
+
+
+
+
 
 .overlay {
     position: absolute;
